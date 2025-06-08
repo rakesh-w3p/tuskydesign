@@ -1,4 +1,4 @@
-import { getRandomItem } from '@tuskdesign/util';
+// import { getRandomItem } from '@tuskdesign/util';
 
 export const NAMES = [
   "Brie",
@@ -98,9 +98,9 @@ export const NAMES = [
   "Howie",
 ];
 
-// export function getRandomItem<T>(arr: T[]): T {
-//   return arr[Math.floor(Math.random() * arr.length)];
-// }
+export function getRandomItem<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
 export function getRandomName(): string {
   return getRandomItem(NAMES);
